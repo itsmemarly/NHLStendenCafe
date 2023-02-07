@@ -1,0 +1,29 @@
+﻿@page
+@model NHLStendenCafe.Pages.BestellenModel
+@{
+}
+<h1>Bestellen</h1>
+
+<div class="d-flex justify-content-between">
+  <ul class="nav nav-pills mb-3 col-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link @(ViewBag.ActiveCategory == "Frisdrank" ? "active" : "")" id="pills-Frisdrank-tab" data-toggle="pill" href="#pills-Frisdrank" role="tab" aria-controls="pills-Frisdrank" aria-selected="@(ViewBag.ActiveCategory == "Frisdrank")">Frisdrank</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link @(ViewBag.ActiveCategory == "Bier" ? "active" : "")" id="pills-Bier-tab" data-toggle="pill" href="#pills-Bier" role="tab" aria-controls="pills-Bier" aria-selected="@(ViewBag.ActiveCategory == "Bier")">Bier</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link @(ViewBag.ActiveCategory == "Wijn" ? "active" : "")" id="pills-Wijn-tab" data-toggle="pill" href="#pills-Wijn" role="tab" aria-controls="pills-Wijn" aria-selected="@(ViewBag.ActiveCategory == "Wijn")">Wijn</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link @(ViewBag.ActiveCategory == "Koffie" ? "active" : "")" id="pills-Koffie-tab" data-toggle="pill" href="#pills-Koffie" role="tab" aria-controls="pills-Koffie" aria-selected="@(ViewBag.ActiveCategory == "Koffie")">Koffie</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link @(ViewBag.ActiveCategory == "Thee" ? "active" : "")" id="pills-Thee-tab" data-toggle="pill" href="#pills-Thee" role="tab" aria-controls="pills-Thee" aria-selected="@(ViewBag.ActiveCategory == "Thee")">Thee</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link @(ViewBag.ActiveCategory == "Hapjes" ? "active" : "")" id="pills-Hapjes-tab" data-toggle="pill" href="#pills-Hapjes" role="tab" aria-controls="pills-Hapjes" aria-selected="@(ViewBag.ActiveCategory == "Hapjes")">Hapjes</a>
+    </li>
+  </ul>
+</div>
+

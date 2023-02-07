@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - NHLStendenCafe</title>
+    <title>@ViewData["Title"] - NHL Café</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/NHLStendenCafe.styles.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -18,12 +19,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-primary" asp-area="" asp-page="/Ober/Bestellen">Bestellen</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                          <li class="nav-item">
+                            <a class="nav-link text-primary" asp-area="" asp-page="/Ober/Overzicht">Overzicht</a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-primary" asp-area="" asp-page="/Ober/AllesBetalen">Alles betalen</a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-primary" asp-area="" asp-page="/Ober/PerPersoonBetalen">Per persoon betalen</a>
                         </li>
                     </ul>
                 </div>
@@ -45,6 +52,20 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+   <script>
+        $(document).ready(function () {
+          var currentUrl = window.location.pathname;
+          $(".nav-link").each(function () {
+            var link = $(this).attr("href");
+            if (link === currentUrl) {
+              $(this).addClass("active text-dark");
+            }
+          });
+        });
+</script>
+
+
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

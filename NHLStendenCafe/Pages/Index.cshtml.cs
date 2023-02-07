@@ -14,7 +14,7 @@ namespace NHLStendenCafe.Pages
 
         public void OnGet()
         {
-
+          
         }
     }
 }
