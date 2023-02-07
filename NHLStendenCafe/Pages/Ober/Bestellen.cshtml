@@ -2,28 +2,56 @@
 @model NHLStendenCafe.Pages.BestellenModel
 @{
 }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <h1>Bestellen</h1>
 
-<div class="d-flex justify-content-between">
-  <ul class="nav nav-pills mb-3 col-3" id="pills-tab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link @(ViewBag.ActiveCategory == "Frisdrank" ? "active" : "")" id="pills-Frisdrank-tab" data-toggle="pill" href="#pills-Frisdrank" role="tab" aria-controls="pills-Frisdrank" aria-selected="@(ViewBag.ActiveCategory == "Frisdrank")">Frisdrank</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link @(ViewBag.ActiveCategory == "Bier" ? "active" : "")" id="pills-Bier-tab" data-toggle="pill" href="#pills-Bier" role="tab" aria-controls="pills-Bier" aria-selected="@(ViewBag.ActiveCategory == "Bier")">Bier</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link @(ViewBag.ActiveCategory == "Wijn" ? "active" : "")" id="pills-Wijn-tab" data-toggle="pill" href="#pills-Wijn" role="tab" aria-controls="pills-Wijn" aria-selected="@(ViewBag.ActiveCategory == "Wijn")">Wijn</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link @(ViewBag.ActiveCategory == "Koffie" ? "active" : "")" id="pills-Koffie-tab" data-toggle="pill" href="#pills-Koffie" role="tab" aria-controls="pills-Koffie" aria-selected="@(ViewBag.ActiveCategory == "Koffie")">Koffie</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link @(ViewBag.ActiveCategory == "Thee" ? "active" : "")" id="pills-Thee-tab" data-toggle="pill" href="#pills-Thee" role="tab" aria-controls="pills-Thee" aria-selected="@(ViewBag.ActiveCategory == "Thee")">Thee</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link @(ViewBag.ActiveCategory == "Hapjes" ? "active" : "")" id="pills-Hapjes-tab" data-toggle="pill" href="#pills-Hapjes" role="tab" aria-controls="pills-Hapjes" aria-selected="@(ViewBag.ActiveCategory == "Hapjes")">Hapjes</a>
-    </li>
-  </ul>
+<div class="row">
+<ul class="list-group col-md-3 col-sm-6">
+  <li class="list-group-item ">Frisdrank</li>
+  <li class="list-group-item">Bier</li>
+  <li class="list-group-item">Wijn</li>
+  <li class="list-group-item active">Koffie</li>
+  <li class="list-group-item">Thee</li>
+  <li class="list-group-item">Hapjes</li>
+</ul>
+
+<ul class="list-group col-md-3 col-sm-6">
+  <li class="list-group-item">Normaal <button class="btn btn-primary btn-sm" style="float: right; border-radius: 50px;"><i class="fa fa-plus"></i></button></li>
+  <li class="list-group-item">Cappuchino <button class="btn btn-primary btn-sm" style="float: right;border-radius: 50px;"><i class="fa fa-plus"></i></button></li>
+  <li class="list-group-item">Latte <button class="btn btn-primary btn-sm" style="float: right;border-radius: 50px;"><i class="fa fa-plus"></i></button></li>
+  <li class="list-group-item">Verkeerd <button class="btn btn-primary btn-sm" style="float: right;border-radius: 50px;"><i class="fa fa-plus"></i></button></li>
+</ul>
+
+<div class="col-md-6 col-sm-12">
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Product</th>
+      <th scope="col">Aantal</th>
+      <th scope="col">Prijs</th>
+      <th scope="col">Totaal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+    
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
