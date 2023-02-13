@@ -2,6 +2,7 @@
 @model NHLStendenCafe.Pages.PerPersoonBetalenModel
 @{
 }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <h1>Per persoon betalen</h1>
 
@@ -16,20 +17,32 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
+      <td scope="row">Koffie</td>
+      <td class="text-success"><a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-minus"></i></a> 1 <a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-plus"></i></a> van 2</td>
+      <td>$3.50</td>
+      <td>$7.00</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
+      <td scope="row">Gebak</td>
+      <td class="text-success"><a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-minus"></i></a> 1 <a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-plus"></i></a> van 2</td>
+      <td>$3.50</td>
+      <td>$7.00</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-    
+     <td scope="row">Thee</td>
+      <td class="text-success"><a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-minus"></i></a> 1 <a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-plus"></i></a> van 2</td>
+      <td>$3.50</td>
+      <td>$7.00</td>
     </tr>
   </tbody>
+     <tfoot>
+            <tr>
+                <th scope="row">Te betalen</th>
+                <td/>
+                <td/>
+                <th>$54</th>
+            </tr>
+        </tfoot>
+
 </table>
+<button class="btn btn-primary" style="float:right;">Betalen</button>

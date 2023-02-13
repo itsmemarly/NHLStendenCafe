@@ -2,7 +2,11 @@
 @model NHLStendenCafe.Pages.OverzichtModel
 @{
 }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <h1>Overzicht</h1>
+
+<div>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -14,22 +18,38 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
+      <td scope="row">1</td>
+      <td class="text-success"><a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-minus"></i></a> 1 <a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-plus"></i></a></td>
       <td>Mark</td>
       <td>Otto</td>
 
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <td scope="row">2</td>
+      <td class="text-success"><a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-minus"></i></a> 1 <a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-plus"></i></a></td>
       <td>Jacob</td>
       <td>Thornton</td>
     
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <td scope="row">3</td>
+      <td class="text-success"><a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-minus"></i></a> 1 <a class="btn-sm btn-dark" style="border-radius: 50px;" href="#"><i class="fa fa-plus"></i></a></td>
       <td>Larry</td>
       <td>the Bird</td>
  
     </tr>
   </tbody>
+     <tfoot>
+            <tr>
+                <th scope="row"></th>
+                <td/>
+                <td/>
+                <th>$54</th>
+            </tr>
+        </tfoot>
 </table>
+<div class="col-sm-12 btn-block float-end">
+<a class="btn btn-primary float-end" href="/Ober/AllesBetalen">Alles betalen</a>
+<a class="btn btn-primary float-end" href="/Ober/PerPersoonBetalen">Betalen per persoon</a>
+</div>
+</div>
